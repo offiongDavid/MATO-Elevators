@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business site</title>
+    <link rel="stylesheet" href="/LIFTS/Mask lift/ml.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="flex1">
+        <div class="first-row">
+
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <h3>Welcome to MATO ELEVATORS Industry</h3>
+            </div>
+
+
+        </div>
+
+
+        <div class="contact-section">
+
+            <div>
+                <i class="fas fa-phone"></i>
+                <a href=""><span>+2347073776370</span></a>
+            </div>
+
+            <div class="">
+                <i class="fa-solid fa-envelope"></i>
+                <a href=""><span>info@MATOelevators.ng</span></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="nav-bar">
+        <img src="/Images/logo-removebg-preview (2).png" alt=" Logo" class="logo">
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About/About.html">About Us</a></li>
+            <li><a href="/Products/product.html" class="Active">Products</a></li>
+            <li><a href="/services/service.html">Sevices</a></li>
+            <li><a href="/Blog/blog.html">Blogs</a></li>
+            <li><a href="/Contact/contact.html">Contacts</a></li>
+        </div>
+
+        <div class="btn1">
+            <button class="btn">GET A FREE QUOTE</button>
+        </div>
+    </div>
+
+
+
+    <section class="hero">
+        <h1>Category: Mast Lift</h1>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="/index.html">Home</a> <span>/</span> <span class="active">Products</span>
+    </div>
+
+    <div class="top-bar-con" id="top-bar">
+        <div class="top-bar">
+            <div class="results">Showing a single result</div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <!-- Product grid -->
+        <div class="product-grid active" data-page="1">
+
+            <!-- Card 2 -->
+            <div class="product-card" data-title="Freight Lift Elevator"
+                data-image="https://homeliftelevators.ng/wp-content/uploads/2025/02/Freight-Lift-Elevator-180x180.png"
+                data-description="A freight lift elevator is designed for transporting heavy goods, machinery, and materials between floors in industrial and commercial settings. It enhances efficiency, reduces manual labor, and ensures safe movement of bulky loads. With advanced safety features and durability, it plays a crucial role in warehouses, factories, and logistics centers."
+                data-category="Mast Lift"
+                data-tags="  Cargo lift, Commercial Elevator, freight elevator, Freight Lift, Goods Elevator, Heavy-Duty Lift, industrial lift, Loading Lift, Material Handling Lift, Warehouse Elevator"
+                data-rating="5">
+
+
+                <img src="https://homeliftelevators.ng/wp-content/uploads/2025/02/Freight-Lift-Elevator-180x180.png"
+                    alt="Product">
+                <div class="product-actions">
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" class="view-details"><i class="fa fa-eye"></i></a>
+                </div>
+                <div class="product-info">
+                    <h3>Freight Lift Elevator</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <div class="modal-text">
+                <h2 id="modalTitle"></h2>
+                <p class="stars" id="modalStars"></p>
+                <p class="prod-content" id="modalDescription"></p>
+
+                <div class="padw">
+                    <p><b>Category:</b> <span id="modalCategory"></span></p>
+                    <p><b>Tags:</b> <span id="modalTags"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product detail page (hidden by default) -->
+    <div id="productPage" style="display:none;">
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button onclick="showTab('desc')">Description</button>
+            <button onclick="showTab('reviews')">Reviews</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="tab-desc" class="tab-content">
+            <h3 id="descTitle">IMAGE NAME AND HEIGHT</h3>
+            <p id="descText"></p>
+        </div>
+
+
+        <div id="tab-reviews" class="tab-content" style="display:none;">
+            <h3>Customer Reviews</h3>
+
+            <!-- Review Form -->
+            <form id="reviewForm">
+                <label for="reviewEmail">Your Email:</label>
+                <input type="email" id="reviewEmail" required />
+
+                <label for="reviewText">Your Review:</label>
+                <textarea id="reviewText" required></textarea>
+
+                <label for="reviewRating">Rating:</label>
+                <select id="reviewRating" required>
+                    <option value="5">⭐ 5</option>
+                    <option value="4">⭐ 4</option>
+                    <option value="3">⭐ 3</option>
+                    <option value="2">⭐ 2</option>
+                    <option value="1">⭐ 1</option>
+                </select>
+
+                <button type="submit">Submit Review</button>
+            </form>
+
+            <hr>
+
+            <!-- Where reviews show -->
+            <div id="reviewsList">
+                <p>No customer reviews yet.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>MATO ELEVATORS</h3>
+                <p>
+                    MATO Elevators are specialized in elevator manufacturing, sales & service, located in
+                    Nigeria.
+                    We have been committed to a one-stop solution for low rise prefabricated houses.
+                    Service range from architectural design, production, storage and transportation to
+                    installation guidance, after-sales service, etc.
+                </p>
+                <p><i class="fa-solid fa-envelope"></i> info@MATOelevators.ng</p>
+                <p><i class="fa-solid fa-phone"></i> +2347073776370</p>
+            </div>
+
+            <!-- Explore -->
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="/category/RE/RE.html">Residential Elevators</a></li>
+                    <li><a href="/category/CL/cl.html">Commercial Lifts</a></li>
+                    <li><a href="/category/Escalators/es.html">Escalators</a></li>
+                    <li><a href="/category/CA/ca.html">Cargo Lifts</a></li>
+                    <li><a href="/category/DW/dw.html">Dumbwaiters</a></li>
+                </ul>
+            </div>
+
+            <!-- Our -->
+            <div class="footer-links">
+                <h4>Our</h4>
+                <ul>
+                    <li><a href="/product-category/boom lift/bl.html">Boom Lift</a></li>
+                    <li><a href="/product-category/scissors lift/sl.html">Scissor Lift</a></li>
+                    <li><a href="/product-category/car lift/cal.html">Car Lift</a></li>
+                    <li><a href="/product-category/Loading Ramps/lr.html">Loading Ramps</a></li>
+                    <li><a href="/product-category/Dock leveller/dl.html">Dock Leveller</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="/LIFTS/Mask lift/ml.html">Mast Lift</a></li>
+                    <li><a href="/LIFTS/Wheelchair lift/wl.html">Wheelchair Lifts</a></li>
+                    <li><a href="/LIFTS/Stair lift/sl.html">Stairlifts</a></li>
+                    <li><a href="/LIFTS/Patients Lift/pl.html">Patient Lifts</a></li>
+                    <li><a href="/LIFTS/Moving Walkway/mw.html">Moving Walkway</a></li>
+                </ul>
+            </div>
+
+            <!-- Pages -->
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="/About/About.html" target="_blank" rel="noopener noreferrer">About Us</a>
+                    </li>
+                    <li><a href="/Products/product.htm" target="_blank" rel="noopener noreferrer">Products</a>
+                    </li>
+                    <li><a href="/services/service.html" target="_blank" rel="noopener noreferrer">Services</a></li>
+                    <li><a href="/Blog/blog.html" target="_blank" rel="noopener noreferrer">Blogs</a></li>
+                    <li><a href="/Contact/contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>©2024 MATO All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/LIFTS/Mask lift/ml.js"></script>
+
+</body>
+
+</html>
