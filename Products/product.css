@@ -14,6 +14,11 @@
 }
 
 
+body {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
 
 
 .slideshow {
@@ -29,8 +34,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
+    filter: contrast(110%) brightness(105%) saturate(110%);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
     opacity: 0;
     transform: scale(1);
     transition: opacity 1s ease-in-out;
@@ -260,6 +269,54 @@
     }
 }
 
+
+
+/* ? CSS MODAL FUNCTION */
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal image */
+#imgModal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.6);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Close button */
+#imgModal span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#imgModal span:hover {
+  color: #f00;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 /* Initial hidden state */
 .reveal {
     opacity: 0;
@@ -276,13 +333,15 @@
 
 
 .products-sec {
-    background-image: url('https://media.istockphoto.com/id/532413706/photo/modern-elevator-with-metal-doors-3d-rendering.jpg?b=1&s=612x612&w=0&k=20&c=Sl1AfYmLufoC-oeTeDfTx2OcTTiHzqtAXBoQ17jKsYA=');
+    background-image: url('https://images.unsplash.com/photo-1518892974594-4adbf359419c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2hpdGUlMjBiYWNrZ3JvdW5kJTIwZWxldmF0b3IlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D');
     background-position: center;
     padding: 20px 0;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+
+
 }
 
 .products-sec .ab {
@@ -313,6 +372,8 @@
     width: 170px;
     object-fit: cover;
     object-position: center;
+    cursor: grab;
+    transition: transform 0.3s ease;
 }
 
 .container button {
@@ -349,13 +410,13 @@
     justify-items: center;
 }
 
-.flex-container img {
+/* .flex-container img {
     transition: transform 0.5s ease;
     transform: scale(1);
-}
+} */
 
-.flex-container .container:hover img {
-    transform: scale(1.05);
+.products-sec .container:hover img {
+    transform: scale(1.03);
     filter: brightness(80%);
 }
 
@@ -683,7 +744,8 @@
     .logo {
         width: 180px;
     }
-    .nav-bar{
+
+    .nav-bar {
 
         flex-wrap: wrap;
         gap: 15px;

@@ -10,7 +10,6 @@
 }
 
 
-
 .top-bar-con {
     width: 1000px;
     margin: 0 auto;
@@ -252,66 +251,6 @@
     cursor: pointer;
 }
 
-/* Responsive Modal */
-@media (max-width: 768px) {
-    .modal-content {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        max-width: 95%;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    .modal-content img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-
-    .modal-text {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .modal-text h2 {
-        font-size: 20px;
-    }
-
-    .prod-content,
-    .padw,
-    .stars {
-        font-size: 13px;
-    }
-
-    .close {
-        font-size: 22px;
-        top: 5px;
-        right: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .modal-content {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .modal-content img {
-        max-width: 250px;
-    }
-
-    .modal-text h2 {
-        font-size: 18px;
-    }
-
-    .prod-content,
-    .padw,
-    .stars {
-        font-size: 12px;
-    }
-}
-
 .prod-content {
     margin: 20px 0;
     font-size: 14px;
@@ -381,6 +320,67 @@
 }
 
 
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 95%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .modal-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .modal-text h2 {
+        font-size: 20px;
+    }
+
+    .prod-content,
+    .padw,
+    .stars {
+        font-size: 13px;
+    }
+
+    .close {
+        font-size: 22px;
+        top: 5px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .modal-content img {
+        max-width: 250px;
+    }
+
+    .modal-text h2 {
+        font-size: 18px;
+    }
+
+    .prod-content,
+    .padw,
+    .stars {
+        font-size: 12px;
+    }
+}
+
+
 /* product page */
 #productPage {
     max-width: 900px;
@@ -411,7 +411,7 @@
 }
 
 .tabs button:hover {
-    background: #ffa94d;
+    background: limegreen;
     color: #fff;
 }
 
@@ -515,7 +515,7 @@
 }
 
 #reviewForm button:hover {
-    background: #e68900;
+    background: limegreen;
 }
 
 /* --- Reviews List --- */
@@ -553,6 +553,12 @@
 
 
 
+
+
+
+
+
+
 /* Responsive Layout */
 @media (max-width: 992px) {
     .product-grid {
@@ -567,6 +573,8 @@
         width: 100%;
     }
 }
+
+
 
 
 .slideshow {
@@ -1023,7 +1031,6 @@
     .logo {
         width: 180px;
     }
-
 
 
     .section1 {

@@ -299,7 +299,7 @@
 }
 
 .tabs button:hover {
-    background: #ffa94d;
+    background: limegreen;
     color: #fff;
 }
 
@@ -403,7 +403,7 @@
 }
 
 #reviewForm button:hover {
-    background: #e68900;
+    background: limegreen;
 }
 
 /* --- Reviews List --- */

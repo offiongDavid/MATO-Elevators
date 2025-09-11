@@ -14,6 +14,10 @@
   color: limegreen;
 }
 
+body {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
 
 
 /* Initial hidden state */

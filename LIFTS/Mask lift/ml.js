@@ -1,19 +1,18 @@
- const buttoNrod = document.getElementById('btn-quote');
-  buttoNrod.addEventListener("click", () => {
+const buttoNrod = document.getElementById('btn-quote');
+buttoNrod.addEventListener("click", () => {
 
     window.location.href = '/GET A FREE QUOTE/get.html';
-  })
+})
 
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
     menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+        navLinks.classList.toggle("active");
     });
-  });
-
+});
 
 const modal = document.getElementById("productModal");
 const closeBtn = document.querySelector(".close");
@@ -82,12 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const customData = {
-       "Freight Lift Elevator": {
-    image: "https://homeliftelevators.ng/wp-content/uploads/2025/02/Freight-Lift-Elevator-180x180.png",
-    description: `A freight lift elevator is designed for transporting heavy goods, machinery, and materials between floors in industrial and commercial settings. It enhances efficiency, reduces manual labor, and ensures safe movement of bulky loads. With advanced safety features and durability, it plays a crucial role in warehouses, factories, and logistics centers.`
-  }
+        "Freight Lift Elevator": {
+            image: "https://homeliftelevators.ng/wp-content/uploads/2025/02/Freight-Lift-Elevator-180x180.png",
+            description: `A freight lift elevator is designed for transporting heavy goods, machinery, and materials between floors in industrial and commercial settings. It enhances efficiency, reduces manual labor, and ensures safe movement of bulky loads. With advanced safety features and durability, it plays a crucial role in warehouses, factories, and logistics centers.`
+        }
     };
-
 
     let reviewsData = JSON.parse(localStorage.getItem("reviewsData")) || {};
 

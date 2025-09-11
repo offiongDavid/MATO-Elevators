@@ -1,4 +1,4 @@
-  const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');
     let current = 0;
 
     function showNext() {
@@ -13,8 +13,9 @@
 const reveals = document.querySelectorAll('.reveal');
 
 window.addEventListener('scroll', () => {
+  const windowHeight = window.innerHeight;
+  
   reveals.forEach(sec => {
-    const windowHeight = window.innerHeight;
     const revealTop = sec.getBoundingClientRect().top;
     const revealPoint = 100;
 
@@ -25,6 +26,33 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+
+
+document.querySelectorAll(".products-sec img").forEach(img => {
+  img.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalImg.src = img.src; // set clicked image
+  });
+});
+
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
 
   document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
