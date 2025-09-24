@@ -1,5 +1,58 @@
+ 
+   const buttonplore = document.getElementById('btn30')
+
+
+  buttonplore.addEventListener("click", () => {
+    window.location.href = '/About/About.html';
+  })
+
+
+   
+   new Swiper(".partnersSwiper", {
+    slidesPerView: 5,        // show 4 logos
+    spaceBetween: 50,        // spacing between logos
+    loop: true,              // infinite loop
+    autoplay: {
+      delay: 0,              // continuous autoplay
+      disableOnInteraction: false,
+    },
+    speed: 3000,             // slower/smoother scroll
+    allowTouchMove: false,   // disable manual swiping
+  });
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".team-slider img");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.parentElement.classList.remove("active"); // remove active from container
+        });
+        images[index].parentElement.classList.add("active"); // add active to current container
+    }
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    // Show first image on load
+    showImage(currentIndex);
+});
+
+
 const slides = document.querySelectorAll('.slide');
-    let current = 0;
+
+
+let current = 0;
 
     function showNext() {
       slides[current].classList.remove('active');
@@ -7,7 +60,7 @@ const slides = document.querySelectorAll('.slide');
       slides[current].classList.add('active');
     }
 
-    setInterval(showNext, 6000);
+    setInterval(showNext, 3000);
  
 
 const reveals = document.querySelectorAll('.reveal');
@@ -121,19 +174,5 @@ const buttonexplore = document.getElementById('btn13')
   })
 
   
-const buttonplore = document.getElementById('btn30')
-
-
-  buttonplore.addEventListener("click", () => {
-    window.location.href = '/About/About.html';
-  })
-
-  const buttonlore = document.getElementById('btn-25')
-
-
-  buttonlore.addEventListener("click", () => {
-    window.location.href = '/About/About.html';
-  })
-
 
   

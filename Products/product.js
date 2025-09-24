@@ -42,7 +42,7 @@ const closeModal = document.getElementById("closeModal");
 document.querySelectorAll(".products-sec img").forEach(img => {
   img.addEventListener("click", () => {
     modal.style.display = "flex";
-    modalImg.src = img.src; // set clicked image
+    modalImg.src = img.src; 
   });
 });
 
