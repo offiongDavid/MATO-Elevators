@@ -1546,7 +1546,7 @@ body {
     }
 
     .new{
-    font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #111;
       margin: 0;
       padding: 0;
@@ -1555,4 +1555,5 @@ body {
       align-items: center;
       height: 100vh;
       border-top-left-radius: 70px;
+      border-top-right-radius: 70px;
     }
