@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.slide');
 let current = 0;
 
@@ -14,7 +15,6 @@ const navLinks = document.getElementById("nav-links");
 toggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
-
 
 
 const reveals = document.querySelectorAll('.reveal');
@@ -112,3 +112,17 @@ buttoNrod.addEventListener("click", () => {
 
   window.location.href = '/GET A FREE QUOTE/get.html';
 })
+
+
+   new Swiper(".partnersSwiper", {
+    slidesPerView: 3,        // show 4 logos
+    spaceBetween: 0,        // spacing between logos
+    loop: true,              // infinite loop
+    autoplay: {
+      delay: 0,              // continuous autoplay
+      disableOnInteraction: false,
+    },
+    speed: 3000,             // slower/smoother scroll
+    allowTouchMove: false,   // disable manual swiping
+  });
+

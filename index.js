@@ -9,8 +9,8 @@
 
    
    new Swiper(".partnersSwiper", {
-    slidesPerView: 5,        // show 4 logos
-    spaceBetween: 50,        // spacing between logos
+    slidesPerView: 3,        // show 4 logos
+    spaceBetween: 0,        // spacing between logos
     loop: true,              // infinite loop
     autoplay: {
       delay: 0,              // continuous autoplay
