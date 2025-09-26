@@ -114,15 +114,27 @@ buttoNrod.addEventListener("click", () => {
 })
 
 
-   new Swiper(".partnersSwiper", {
-    slidesPerView: 3,        // show 4 logos
-    spaceBetween: 0,        // spacing between logos
-    loop: true,              // infinite loop
-    autoplay: {
-      delay: 0,              // continuous autoplay
-      disableOnInteraction: false,
-    },
-    speed: 3000,             // slower/smoother scroll
-    allowTouchMove: false,   // disable manual swiping
-  });
+ new Swiper(".partnersSwiper", {
+  slidesPerView: 3,        // default for large screens
+  spaceBetween: 10,        // spacing between logos
+  loop: true,              // infinite loop
+  autoplay: {
+    delay: 0,              // continuous autoplay
+    disableOnInteraction: false,
+  },
+  speed: 3000,             // smooth scroll
+  allowTouchMove: false,   // disable manual swiping
 
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,    // desktop
+    },
+    768: {
+      slidesPerView: 2,    // tablet
+    },
+    0: {
+      slidesPerView: 1,    // mobile
+    }
+  }
+});
