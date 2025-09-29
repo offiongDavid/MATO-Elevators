@@ -136,6 +136,7 @@ modal.addEventListener("click", (e) => {
 
   const buttonProd = document.getElementById('btn2');
   const buttonServ = document.getElementById('btn3');
+  const buttonProdct = document.getElementById('btn13');
 
 
   buttonProd.addEventListener("click", () => {
@@ -145,7 +146,6 @@ modal.addEventListener("click", (e) => {
   buttonServ.addEventListener("click", () => {
     window.location.href = '/services/service.html';
   })
-
 
   document.addEventListener("DOMContentLoaded", () => {
     
@@ -162,6 +162,7 @@ modal.addEventListener("click", (e) => {
         but10: "/category/CA/ca.html",
         but11: "/product-category/boom lift/bl.html",
         but12: "/category/DW/dw.html"
+        
     };
 
     // Attach event listeners

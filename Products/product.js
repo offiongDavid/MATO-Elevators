@@ -8,7 +8,7 @@ function showNext() {
   slides[current].classList.add('active');
 }
 
-setInterval(showNext, 6000);
+setInterval(showNext, 3000);
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 

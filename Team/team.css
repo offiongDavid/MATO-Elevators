@@ -1407,6 +1407,15 @@ body {
     display: none !important; /* hide arrows + pagination on desktop */
   }
 }
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+}
+
 
 
  .team-section {

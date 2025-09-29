@@ -24,7 +24,7 @@ body {
 .slideshow {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -982,7 +982,7 @@ body {
 
 .partners img {
     height: 100px;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: filter 0.3s, transform 0.3s;
 }
 

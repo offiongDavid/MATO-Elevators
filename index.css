@@ -1550,7 +1550,6 @@ body {
 
 .partners img {
     height: 100px;
-    filter: grayscale(100%);
     transition: filter 0.3s, transform 0.3s;
 }
 
